@@ -11,6 +11,7 @@
         };
         preferences = {
             theme = "Dracula";
+            autoplayGifs = false;
         };
         openFirewall = true;
         redisCreateLocally = true;
