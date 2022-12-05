@@ -37,7 +37,7 @@ def write_script(target_path, interpreter):
         mkdir_and_set_env_var(f, f"/run/{unit_name}", "RUNTIME_DIRECTORY")
         mkdir_and_set_env_var(f, f"/var/lib/{unit_name}", "STATE_DIRECTORY")
         mkdir_and_set_env_var(f, f"/var/cache/{unit_name}", "CACHE_DIRECTORY")
-        mkdir_and_set_env_var(f, f"/var/logs/{unit_name}", "LOGS_DIRECTORY")
+        mkdir_and_set_env_var(f, f"/var/log/{unit_name}", "LOGS_DIRECTORY")
         mkdir_and_set_env_var(f, f"/etc/{unit_name}", "CONFIGURATION_DIRECTORY")
 
         if "User" in unit["Service"]:
